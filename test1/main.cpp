@@ -1,10 +1,14 @@
 #include <iostream>
- int main() {
-   int year = 2025;                 // 整數（沒有小數點）
-   double price = 10.99;            // 浮點數（有小數點）
-   double gpa = 2.5, temperature = 25.1; // 同行可宣告多個
-   std::cout << "year=" << year << "\n";
-   std::cout << "price=" << price << "\n";
-   std::cout << "gpa=" << gpa << ", temp=" << temperature << "\n";
-   return 0;
- }
+
+int main() {
+    double celsius;       // 攝氏溫度變數
+    double fahrenheit;    // 華氏溫度變數
+    
+    std::cout << "請輸入華氏溫度!\n";   // 請使用者輸入華氏溫度
+    std::cin >> fahrenheit;            // 讀取華氏溫度
+    
+    celsius = (fahrenheit - 32) / 9 * 5;  // 計算攝氏溫度
+    std::cout << "攝氏溫度為: " << celsius << " 度\n";  // 輸出結果
+    
+    return 0;
+}
